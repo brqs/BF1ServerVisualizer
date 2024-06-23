@@ -1,0 +1,177 @@
+/* src/assets/styles/global.css */
+html, body {
+    height: 100%; /* 重要 */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 使用视口高度来确保填满整个屏幕 */
+}
+
+.layout {
+    flex: 1; /* 使 layout 占用所有可用空间，推动 footer 到底部 */
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.server-card-container {
+    display: flex;           /* 启用 Flexbox */
+    flex-wrap: wrap; /* 允许子元素换行 */
+    width: 100%;
+}
+.servergroup {
+    color: #333;            /* 字体颜色设置为深灰色，增加可读性 */
+    background-color: #f9f9f9; /* 背景色与.serverLink相协调 */
+    padding: 10px 20px;    /* 上下左右内边距 */
+    margin: 10px auto;     /* 与.serverLink保持一致的外边距 */
+    border-radius: 14px;   /* 圆角边框 */
+    font-size: 1.4rem;     /* 字体大小适中 */
+    font-weight: bold;     /* 字体加粗，使标题更加突出 */
+    text-align: center;    /* 文字居中 */
+    width: 85%;           /* 宽度占满容器，可根据布局调整 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 轻微的阴影效果增加层次感 */
+    display: block;        /*块级显示，确保独占一行 */
+}
+.serverCard {
+    flex: 1;                 /* 每个 serverLink 元素平均分配空间 */
+    margin: 10px 10px;          /* 可选：在元素之间添加一些间隙 */
+}
+
+.serverCard{
+    color: #000;
+    background: #f2f2f2;
+    border: 5px solid #f2f2f2;
+    border-width: 5px 8px;
+    border-radius: 28px;
+    align-items: center;
+    padding: .1rem 1.2rem .1rem 0;
+    text-decoration: none;
+    display: flex;
+}
+.serverImage{
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 38px;
+    width: 48px;
+    min-width: 48px;
+    height: 48px;
+    margin-right: .55rem;
+}
+.serverImage .serverMode{
+    background: radial-gradient(50% 50%, transparent 0%, rgba(0, 0, 0, .286) 100%);
+    border-radius: 38px;
+    height: 100%;
+    margin-top: -.8rem;
+}
+
+.serverImage .serverMode h1{
+    color: #fff;
+    text-align: center;
+    padding-top: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 0;
+}
+
+.serverDescription {
+    white-space: nowrap;
+    margin: 0;
+    overflow: hidden;
+}
+
+.serverStatus {
+    white-space: nowrap;
+    margin-left: auto;
+    padding-left: 1rem;
+}
+
+.card {
+    align-items: center;
+    justify-content: start;
+    /* background: #f2f2f2; */
+    border-radius: 10px;
+    /* border: 5px solid #f2f2f2; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 0 auto; /* 允许卡片根据需要收缩，最小宽度为 auto */
+    margin-right: 10px;
+    margin-left: 10px;
+    overflow: hidden;
+
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    flex: 1 1 auto; /* 使内容区域填满除图片外的剩余空间 */
+    background: rgba(0, 0, 0, 0.5); /* 统计数据背景 */
+    color: white; /* 文本颜色 */
+}
+
+.card-header, .card-stats {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 10px;
+}
+
+.stat h4, .stat p {
+    margin: 2px 0;
+}
+
+.announcement-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+.announcement-card h1 {
+    margin-bottom: 15px;
+}
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.announcement {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.time {
+    color: #666;
+    font-size: 0.85rem;
+}
