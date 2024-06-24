@@ -94,9 +94,7 @@ html, body {
 .card {
     align-items: center;
     justify-content: start;
-    /* background: #f2f2f2; */
     border-radius: 10px;
-    /* border: 5px solid #f2f2f2; */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     flex: 1 0 auto; /* 允许卡片根据需要收缩，最小宽度为 auto */
     margin-right: 10px;
@@ -138,7 +136,12 @@ html, body {
 .card .stat h4, .card .stat p {
     margin: 2px 0;
 }
-
+.topmap p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
 .announcement-card {
     display: flex;
     flex-direction: column;
@@ -188,19 +191,35 @@ html, body {
 
 .maps {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     width: 100%;
 }
 
 .map {
-    width: 30%;
-    padding-bottom: 30%; /* Makes the div a square */
+    width: 100%;
+    /* padding-bottom: 30%; Makes the div a square */ 
     background-size: cover;
     background-position: center;
     border-radius: 8px;
     margin: 10px auto;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
 }
-
+.map .map-content{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    flex: 1 1 auto; /* 使内容区域填满除图片外的剩余空间 */
+    background: rgba(0, 0, 0, 0.5); /* 统计数据背景 */
+    color: white; /* 文本颜色 */
+}
+.map .map-title{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 .leaderboards {
     display: flex;
     width: 100%;

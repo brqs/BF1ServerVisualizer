@@ -4,7 +4,6 @@ import Slider from 'react-slick';
 import ServerCard from '../visualization/ServerCard';
 import ServerCardDetail from '../visualization/ServerCardDetail';
 import GameCard from '../visualization/GameCard';
-import MP_Suez from '../../assets/images/MP_Suez.jpg';
 import AnnouncementCard from './AnnouncementCard'; 
 const CarouselComponent = () => {
     const settings = {
@@ -13,7 +12,7 @@ const CarouselComponent = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
     };
 
     return (
