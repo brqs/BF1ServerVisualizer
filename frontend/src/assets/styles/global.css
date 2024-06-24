@@ -113,7 +113,7 @@ html, body {
 
 
 
-.card-content {
+.card .card-content {
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -122,20 +122,20 @@ html, body {
     color: white; /* 文本颜色 */
 }
 
-.card-header, .card-stats {
+.card .card-header, .card .card-stats {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.stat {
+.card .stat {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0 10px;
 }
 
-.stat h4, .stat p {
+.card .stat h4, .card .stat p {
     margin: 2px 0;
 }
 
@@ -159,7 +159,7 @@ html, body {
     gap: 10px;
 }
 
-.announcement {
+.announcement-card .announcement {
     display: flex;
     justify-content: space-between;
     background-color: #fff;
@@ -167,11 +167,101 @@ html, body {
     border-radius: 5px;
 }
 
-.title {
+.announcement-card .title {
     font-weight: bold;
 }
 
-.time {
+.announcement-card .time {
     color: #666;
     font-size: 0.85rem;
+}
+
+.game-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+.maps {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.map {
+    width: 30%;
+    padding-bottom: 30%; /* Makes the div a square */
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    margin: 10px auto;
+}
+
+.leaderboards {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+}
+.leaderboard {
+    width: 48%; /* Allows two leaderboards to fit in one row */
+    display: flex; /* 使用 flexbox 来居中子元素 */
+    flex-direction: column; /* 垂直堆叠子元素 */
+    align-items: center; /* 水平居中 */
+    justify-content: center; /* 垂直居中，如果需要 */
+    text-align: center; /* 文本居中 */
+}
+
+.leaderboard h3 {
+    color: #000;
+    margin-bottom: 10px; /* 添加一些间距在标题和列表之间 */
+}
+
+.leaderboard ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 8px;
+}
+
+.leaderboard li {
+    display: flex;
+    justify-content: space-between; /* 使用flex布局并将子元素分散对齐到两端 */
+    align-items: center;
+    padding: 8px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.leaderboard li:last-child {
+    border-bottom: none; /* 移除最后一个项的底部边框 */
+}
+
+.leaderboard li span:first-child {
+    text-align: left; /* 名称左对齐 */
+}
+
+.leaderboard li span:last-child {
+    text-align: right; /* 分数右对齐 */
+    padding-left: 20px; /* 在分数和名称之间添加一些间距 */
+}
+
+/* 针对小型设备 */
+@media (max-width: 575.98px) {
+    .leaderboard li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 8px 10px;
+        border-bottom: 1px solid #eee;
+    }
+    .leaderboard li span:last-child {
+        display: none;
+    }
 }

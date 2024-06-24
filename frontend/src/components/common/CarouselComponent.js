@@ -3,6 +3,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import ServerCard from '../visualization/ServerCard';
 import ServerCardDetail from '../visualization/ServerCardDetail';
+import GameCard from '../visualization/GameCard';
 import MP_Suez from '../../assets/images/MP_Suez.jpg';
 import AnnouncementCard from './AnnouncementCard'; 
 const CarouselComponent = () => {
@@ -12,7 +13,7 @@ const CarouselComponent = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
     };
 
     return (
@@ -53,7 +54,9 @@ const CarouselComponent = () => {
             <div class="server-card-container">
                 <AnnouncementCard/>
             </div>
-            
+            <div class="server-card-container">
+                <GameCard/>
+            </div>
         </Slider>
     );
 };
