@@ -179,7 +179,7 @@ html, body {
     font-size: 0.85rem;
 }
 
-.game-card {
+.topmap-card {
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -189,37 +189,7 @@ html, body {
     margin: 20px auto;
 }
 
-.maps {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
 
-.map {
-    width: 100%;
-    /* padding-bottom: 30%; Makes the div a square */ 
-    background-size: cover;
-    background-position: center;
-    border-radius: 8px;
-    margin: 10px auto;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    display: flex;
-}
-.map .map-content{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    flex: 1 1 auto; /* 使内容区域填满除图片外的剩余空间 */
-    background: rgba(0, 0, 0, 0.5); /* 统计数据背景 */
-    color: white; /* 文本颜色 */
-}
-.map .map-title{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
 .leaderboards {
     display: flex;
     width: 100%;

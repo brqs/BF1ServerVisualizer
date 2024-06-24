@@ -3,7 +3,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import ServerCard from '../visualization/ServerCard';
 import ServerCardDetail from '../visualization/ServerCardDetail';
-import GameCard from '../visualization/GameCard';
+import TopmapCard from '../visualization/TopmapCard';
 import AnnouncementCard from './AnnouncementCard'; 
 const CarouselComponent = () => {
     const settings = {
@@ -54,7 +54,7 @@ const CarouselComponent = () => {
                 <AnnouncementCard/>
             </div>
             <div class="server-card-container">
-                <GameCard/>
+                <TopmapCard/>
             </div>
         </Slider>
     );

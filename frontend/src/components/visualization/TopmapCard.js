@@ -1,18 +1,19 @@
 import React from 'react';
 
-function GameCard() {
+function TopmapCard() {
     return (
-        <div className="game-card">
+        <div className="topmap-card">
             <h2 className="title">热门地图</h2>
             <div className="card topmap topmap1" style={{ backgroundImage: 'url("https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Tunguska/31/107/MP_Amiens_LandscapeLarge-e195589d.jpg")' }}>
                 <div className="card-content">
                     <div className="card-header">
-                        top1 亚眠
+                        top1 亞眠
                     </div>
                     <div className="card-stats">
                         <p>
-                        服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍
-                        服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍
+                        親愛的姐姐，聽說我們的勝利讓皇帝宣佈全國放假一天。
+                        我知道食物可能還會讓侄子們更開心一些。在這裏，我們找到了棄置的英軍庫房，這裏裝著各種補給。
+                        這裏有麵包，蛋，還有啤酒。一旦我們拿下亞眠，我就會試著寄一些回家。厌倦了全是百星菊花车和沙蒙的亚眠？都什么年代了还在玩传统亚眠，维新派都在玩DDF的亚眠辣！什么，害怕毒气绊雷和蜘蛛人？不知道喵~
                         </p>
                     </div>
                 </div>
@@ -39,8 +40,7 @@ function GameCard() {
 
                     <div className="card-stats">
                         <p>
-                        服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍
-                        服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍服务器地图介绍
+                        我們預計要在明天攻打法克烏斯要塞。天知道這些厚重的城牆後面藏著些什麼。我聽說這座要塞是在俾斯麥的普法戰爭後建成，用來保護這個地區未來不受到其他人入侵。在你面前的是：野生英梨梨栖息地；一战量子毒气室。在DDF，没有丢士力架和手持M10A猎人的突击，体验纯正一战大栓室内战斗。温馨提示，拐角撞上你的不一定是嘴里叼着三明治的美少女，也可能是百星刺刀。
                         </p>
                     </div>
                 </div>
@@ -67,4 +67,4 @@ function GameCard() {
     );
 }
 
-export default GameCard;
+export default TopmapCard;
